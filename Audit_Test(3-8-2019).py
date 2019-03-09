@@ -14,9 +14,7 @@ class Connection(object):
 		
 
 def main():
-	x = Connection(ssh,xapi,api_key)
-	y = PanXapi)
-	z = start()
+	print(xapi.PanXapi.cmd_xml(self.xapi, cmd='show system info'))
 	
 # Call main
 if __name__ == '__main__':
