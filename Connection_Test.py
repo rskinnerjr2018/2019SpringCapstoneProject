@@ -7,7 +7,7 @@ def main():
                  api_key='LUFRPT11YTVGTEF4NDNqb1FhNjhJTlo5ZFhiR3BWcjQ9VEZQUzlHQzlibTZNMklLTmMySUpNUT09',
                  hostname='192.168.1.254')
 
-    xapi.PanXapi.cmd_xml(cmd='show system info')
+    xapi.PanXapi.cmd_xml(self, cmd='show system info')
 
     print(xapi.PanXapi.cmd_xml(cmd='show system info'))
 
