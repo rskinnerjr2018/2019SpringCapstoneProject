@@ -2,14 +2,14 @@
 from pan import xapi
 from paramiko import SSHClient
 import getpass
-Username = input('Username: ')
+Username = input("Username:")
 password = getpass.getpass("Password: ")
 port = 22
 
 remote = SSHClient()
 remote.load_system_host_keys()
 
-remote.connect(hostname='172.16.203.251',port=22,username=Username,password=password)
+remote.connect(hostname='172.16.203.251', port=22, username=Username, password=password)
 
 
 def main():
