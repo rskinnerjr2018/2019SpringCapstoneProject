@@ -11,11 +11,12 @@ def connection(hostname,username,password):
     remote = SSHClient()
     remote.load_system_host_keys()
     remote.connect(hostname=hostname, port=22, username=username, password=password)
-def api_call(gnerate_key, self):
-    self.xapi.Panxapi.keygen = None
+def __init__(self,keygen):
+    self.keygen = keygen
+    xapi.PanXapi.keygen(self)
+def api_call(__init__,generate_key):
     if (generate_key == 'y') or (generate_key == 'Y') or (generate_key == 'yes') or (generate_key == 'YES')  or (generate_key == 'Yes'):
-        xapi.PanXapi.keygen(self)
-        return
+        print xapi.PanXapi.keygen
 def file(filename):
     create_file= open(filename,'w')
     create_file.write('hello')
@@ -23,6 +24,6 @@ def file(filename):
 
 # Call main
 if __name__ == '__main__':
-    api_call(generate_key,self)
+    api_call(__init__, generate_key)
     #connection(hostname,username,password)
     #file(filename)
