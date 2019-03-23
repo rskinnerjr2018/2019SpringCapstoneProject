@@ -2,8 +2,6 @@
 from pan import xapi
 from paramiko import SSHClient
 import getpass
-import sys
-import os
 hostname = raw_input('Hostname:')
 username = raw_input("Username:")
 password = getpass.getpass("Password: ")

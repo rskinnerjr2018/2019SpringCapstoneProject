@@ -13,7 +13,7 @@ def file(filename):
     create_file= open(filename,'w')
     create_file.write('hello')
 def main():
-    connect()
+    connect(hostname,username,password)
     file(filename)
 if __name__ == '___main___':
     main()
