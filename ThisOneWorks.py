@@ -10,7 +10,7 @@ def connect(hostname,username,password):
         remote.load_system_host_keys()
         remote.connect(hostname=hostname, port=22, username=username, password=password)
 def file(filename):
-    create_file= open(filename,'w')
+    create_file= open(filename, 'w')
     create_file.write('hello')
 def main():
     connect(hostname,username,password)
