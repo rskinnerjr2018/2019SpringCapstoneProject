@@ -11,10 +11,8 @@ class CapstoneProject():
                                                       hostname=self.hostname))
         self.filename = open(raw_input('File Path/Name:'), 'w')
         self.words = self.filename.write(self.connection_info)
-
     def Connection(self):
         self.connection_info()
-
     def api_call(self):
         if (self.generate_key == 'y') or (self.generate_key == 'Y') or \
                 (self.generate_key == 'yes') or (self.generate_key == 'YES') or \
@@ -23,7 +21,6 @@ class CapstoneProject():
 
 def main():
     CapstoneProject()
-
 
 if __name__ == '__main__':
     main()

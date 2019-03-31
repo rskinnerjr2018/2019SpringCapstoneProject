@@ -8,7 +8,7 @@ import getpass
 #password = getpass.getpass("Password: ")
 filename = raw_input(('File Path/Name:'))
 
-generate_key = raw_input('Do you want to generate an API Key:?')
+generate_key = raw_input('Do you want to generate an API Key?:)
 def connection(hostname,username,password):
     remote = SSHClient()
     remote.load_system_host_keys()
