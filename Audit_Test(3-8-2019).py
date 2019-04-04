@@ -1,7 +1,7 @@
 # Test Script to detect if pan-python works
+from pan import xapi
 x=''
 y=''
-from pan import xapi
 class Connection(object):
 
 
@@ -19,8 +19,9 @@ class Connection(object):
 		
 
 def main():
-	call=Connection
-	print(y)
+	call=Connection(xapi, 'XML', 'xmladmin', '192.168.1.254',
+					'LUFRPT11YTVGTEF4NDNqb1FhNjhJTlo5ZFhiR3BWcjQ9VEZQUzlHQzlibTZNMklLTmMySUpNUT09')
+	print(Connection.start(__init__))
 
 # Call main
 if __name__ == '__main__':
